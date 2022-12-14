@@ -1,8 +1,8 @@
 node default {
-  file { '/root/README':
-    ensure => file,
-    content => 'puppetserver readme',
-  }
+}
+
+node puppetserver {
+  include role::master_server
 }
 
 node puppetclient1 {
